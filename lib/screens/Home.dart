@@ -15,8 +15,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   var currentIndex = 0;
   List listofscreens = [
-    News(),
     CovidCase(),
+    News(),
     Maps(),
     Helplines(),
   ];
@@ -35,17 +35,17 @@ class _HomeState extends State<Home> {
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
             icon: FaIcon(
-              FontAwesomeIcons.newspaper,
+              FontAwesomeIcons.home,
             ),
-            title: Text("News"),
+            title: Text("Home"),
             activeColor: Colors.white,
             inactiveColor: Colors.green,
           ),
           BottomNavyBarItem(
             icon: FaIcon(
-              FontAwesomeIcons.chartLine,
+              FontAwesomeIcons.newspaper,
             ),
-            title: Text("Cases"),
+            title: Text("News"),
             activeColor: Colors.white,
             inactiveColor: Colors.green,
           ),
